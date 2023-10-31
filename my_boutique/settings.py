@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'home',
+    # third party app
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -59,7 +61,10 @@ ROOT_URLCONF = 'my_boutique.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'template'),
+            os.path.join(BASE_DIR, 'templates', 'allauth')
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

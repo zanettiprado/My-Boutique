@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gt#3opy6jcxx1dxd8g0@aujzps4)3annljuj3kj_7gmv-rn_)p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-zanettiprado-myboutique-aprm4mncasd.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['8000-zanettiprado-myboutique-aprm4mncasd.ws-eu105.gitpod.io', '8000-zanettiprado-myboutique-aprm4mncasd.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'home',
     'products',
+    'bag',
     # third party app
     'allauth',
     'allauth.account',
